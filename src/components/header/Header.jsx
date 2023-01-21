@@ -7,7 +7,7 @@ import Icon from '../icon/Icon'
 function Header() {
   return (
     <div className={styles.header}>
-      <Title>Jogo da Velha</Title>
+      <Title>Jogo da Velha 2</Title>
       <SubTitle>Criado por Edvaldo Oliveira</SubTitle>
        <div className={styles.iconContent}>
         <Icon iconName="github" link= "https://github.com/valodoliver"/>

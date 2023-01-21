@@ -25,8 +25,8 @@ function Game() {
     if (gameState[pos] === 0 && winner ===0) {  // logica para bloquear jogo
       let NewGameState = [...gameState]
       NewGameState[pos] = currentPlayer
-      
       setGameState(NewGameState)
+     
     }
 
   }
@@ -35,8 +35,11 @@ const verifyGame = ()=>{
 winnerTable.forEach((line)=>{
 const values = line.map((position)=>gameState[position])
 const sum = values.reduce((soma, value) => soma + value) 
-console.log(sum)
-if(sum === 3 || sum ===-3)setWinner(sum/3)
+
+if(sum === 3 || sum ===-3){
+  setWinner(sum/3)
+}
+
 })
 }
 
